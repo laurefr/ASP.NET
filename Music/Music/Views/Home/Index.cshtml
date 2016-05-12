@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Album>
+@using Music.Models
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Music Library</h2>
+<ul>
+    @foreach(Album r in Model)
+    {
+        <li>@r.title</li>
+        <li>@r.artist</li>
+        <li>@r.format</li>
+        <li>@r.price<hr/></li>
+ 
+
+    }
+
+</ul>
+<br />
